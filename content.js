@@ -45,7 +45,7 @@ const observer = new MutationObserver(function (mutations) {
                             if (mutation.addedNodes[i].textContent.toLowerCase().indexOf(textToFind[j]) !== -1) {
                                 // Get the parent element
                                 mutation.addedNodes[i].textContent = "";
-                                console.log("supprimé");
+                                console.log(`❌ post with ${textToFind[j]} word has removed`);
                             }
                         }
                     }
