@@ -4,7 +4,6 @@ const textToFind = "chatgpt";
 // Find all p, span and div elements in the document
 const elements = document.querySelectorAll("p, span, div.feed-shared-update-v2");
 
-console.log("test")
 // Iterate through all elements
 for (let i = 0; i < elements.length; i++) {
     console.log(elements)
@@ -12,6 +11,6 @@ for (let i = 0; i < elements.length; i++) {
   if (elements[i].textContent.toLowerCase().indexOf(textToFind) !== -1) {
     // Get the parent element
     elements[i].textContent = "";
-      console.log("supprimé")
+    console.log("❌ CHATGPT FOUND!")
   }
 }
